@@ -18,7 +18,7 @@ export const Form = styled.form`
     flex-direction: column;
     width: 90%;
     height: auto;
-    gap:10px;
+    gap:15px;
 
     input,button{
         height: 30px;
