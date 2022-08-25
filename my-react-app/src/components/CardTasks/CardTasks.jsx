@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { BsFillCheckCircleFill } from "react-icons/bs";
+import { BsFillCheckCircleFill, BsXCircleFill } from "react-icons/bs";
 import { TiDelete } from "react-icons/ti";
 import { GlobalContext } from "../../global/GlobalContext";
 import { Container, Card } from "./styles";
@@ -37,7 +37,7 @@ const CardTasks = () => {
               <p>{item.status}</p>
             </div>
             {item.status ? (
-              <TiDelete size={"30px"} />
+              <BsXCircleFill size={"20px"} />
             ) : (
               <BsFillCheckCircleFill size={"20px"} />
             )}
