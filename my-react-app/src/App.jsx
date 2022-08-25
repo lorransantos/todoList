@@ -19,7 +19,7 @@ const App = () => {
       </Header>
       <Container>
         <CreateTasksContainer>
-          <h2>Nova tarefa</h2>
+          <CreateTask/>
         </CreateTasksContainer>
         <Tasks />
     </Container>
