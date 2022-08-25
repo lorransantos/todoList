@@ -7,6 +7,9 @@ import {
   ContainerTasks,
 } from "./style.js";
 
+import { CreateTask } from "./components/CreatTask/CreateTask";
+
+
 const App = () => {
   return (
     <>
@@ -18,12 +21,10 @@ const App = () => {
         <CreateTasksContainer>
           <h2>Nova tarefa</h2>
         </CreateTasksContainer>
-        {/* <ContainerTasks>
-          <h2>Tarefas</h2>
-        </ContainerTasks> */}
         <Tasks />
-      </Container>
-    </>
+    </Container>
+     </>
+
   );
 };
 
