@@ -8,23 +8,24 @@ import {
 } from "./style.js";
 
 import { CreateTask } from "./components/CreatTask/CreateTask";
-
+import GlobalState from "./global/GlobalState.jsx";
 
 const App = () => {
   return (
     <>
-      <GlobalStyle />
-      <Header>
-        <h1>ToDo List</h1>
-      </Header>
-      <Container>
-        <CreateTasksContainer>
-          <CreateTask/>
-        </CreateTasksContainer>
-        <Tasks />
-    </Container>
-     </>
-
+      <GlobalState>
+        <GlobalStyle />
+        <Header>
+          <h1>ToDo List</h1>
+        </Header>
+        <Container>
+          <CreateTasksContainer>
+            <CreateTask />
+          </CreateTasksContainer>
+          <Tasks />
+        </Container>
+      </GlobalState>
+    </>
   );
 };
 
