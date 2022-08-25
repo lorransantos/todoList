@@ -8,10 +8,8 @@ export const Container = styled.div`
 
 export const Card = styled.div`
   box-sizing: border-box;
-  background-color: ${(props) => {
-    props.backgroundColor ? "#00ff00" : "#afafaf";
-  }};
-  background-color: #afafaf;
+  background-color: ${(props) => (props.test === true ? "#97ff8e" : "#afafaf")};
+  // background-color: #afafaf;
   width: 90%;
   margin: 8px auto;
   padding: 4px 16px;
@@ -19,6 +17,7 @@ export const Card = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
   h3 {
     font-size: 16px;
   }
