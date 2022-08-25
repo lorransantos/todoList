@@ -1,11 +1,13 @@
-import { Container } from "./style.js";
+import GlobalStyle from "./globalStyles.js";
+import { Container, CreateTasksContainer } from "./style.js";
 
 const App = () => {
   return (
     <Container>
-      <div>
+      <GlobalStyle />
+      <CreateTasksContainer>
         <h1>Criação de tarefa</h1>
-      </div>
+      </CreateTasksContainer>
       <div>
         <h1>Apresentação das tarefas</h1>
       </div>
