@@ -27,28 +27,28 @@ export const CreateTask = () => {
 
   return (
     <Container>
-      <Title>NOVA TAREFA</Title>
-      <Form onSubmit={submit}>
-        <label htmlFor='Titulo'>Titulo</label>
-        <input
-          id='Titulo'
-          type='text'
-          name={"title"}
-          value={form.title}
-          onChange={onChange}
-          required
-        />
 
-        <label htmlFor='description'>Descrição</label>
-        <textarea
-          id='description'
-          name={"description"}
-          value={form.description}
-          onChange={onChange}
-          required
-          cols='30'
-          rows='10'
-        ></textarea>
+        <Title>NOVA TAREFA</Title>
+        <Form onSubmit={submit}>
+
+        <label htmlFor="Titulo">Titulo</label>
+        <input 
+        id="Titulo"
+        type="text"
+        name={"title"}
+        value={form.title}
+        onChange={onChange}
+        required
+         />
+        
+        <label htmlFor="description">Descrição</label>
+        <textarea 
+        id="description"
+        name={"description"}
+        value={form.description}
+        onChange={onChange}
+        required
+        cols="30" rows="10"></textarea>
 
         <button type='submit'>ADICIONAR TAREFA</button>
       </Form>

@@ -4,11 +4,10 @@ export const Container = styled.div`
     display:flex;
     flex-direction: column;
     align-items: center;
-    
     border-radius: 10px;
     background-color: #d4cdcd;
     margin: 20px;
-    width: 400px;
+    width: 30vw;
     height: 50vh;
     ;
 `
@@ -18,10 +17,23 @@ export const Form = styled.form`
     flex-direction: column;
     width: 90%;
     height: auto;
-    gap:15px;
+    margin-top:10px;
+    
 
-    input,button{
+    input{
         height: 30px;
+        margin-bottom: 20px;
+        
+    }
+    button{
+        height: 30px;
+        margin-top: 20px;
+
+    }
+    label{
+        margin: 0;
+        gap: 0;
+        text-align: start;
     }
 
 `
