@@ -5,10 +5,10 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    background-color: #d4cdcd;
+    background-color: #D9D9D9;
     margin: 20px;
     width: 30vw;
-    height: 50vh;
+    height: 45vh;
     ;
 `
 
@@ -26,8 +26,10 @@ export const Form = styled.form`
         
     }
     button{
-        height: 30px;
+        height: 40px;
         margin-top: 20px;
+        background-color: #ffffff;
+        cursor: pointer;
 
     }
     label{
@@ -42,10 +44,11 @@ export const Title = styled.h3`
     display:flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #636161;
+    background-color: #777777;
     border-radius: 10px 10px 0 0;
     color: white;
     margin: 0;
     width: 100%;
     height: 40px; 
+    text-transform: uppercase;
 `

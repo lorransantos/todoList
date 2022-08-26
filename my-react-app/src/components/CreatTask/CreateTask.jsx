@@ -1,11 +1,9 @@
 import { useForm } from "../../hoock/UseForm";
 import { Container, Form, Title } from "./style";
 import React, { useContext, useState } from "react";
-import CardTasks from "../CardTasks/CardTasks";
 import { GlobalContext } from "../../global/GlobalContext";
 
 export const CreateTask = () => {
-  //   const [list, setList] = useState([]);
   const { list, setList } = useContext(GlobalContext);
   const { form, onChange, clean } = useForm({
     id: Date.now(),
@@ -17,18 +15,13 @@ export const CreateTask = () => {
     event.preventDefault();
     const newlist = [...list, form];
     setList(newlist);
-    console.log(list);
     clean();
   };
-
-  const test = list.map((item) => {
-    return <CardTasks title={item.title} description={item.description} />;
-  });
 
   return (
     <Container>
 
-        <Title>NOVA TAREFA</Title>
+        <Title>Nova tarefa</Title>
         <Form onSubmit={submit}>
 
         <label htmlFor="Titulo">Titulo</label>

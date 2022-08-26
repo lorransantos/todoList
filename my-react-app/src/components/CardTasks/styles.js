@@ -8,8 +8,7 @@ export const Container = styled.div`
 
 export const Card = styled.div`
   box-sizing: border-box;
-  background-color: ${(props) => (props.test === true ? "#97ff8e" : "#afafaf")};
-  // background-color: #afafaf;
+  background-color: ${(props) => (props.test === true ? "#97ff8e" : "#D9D9D9")};
   width: 90%;
   margin: 8px auto;
   padding: 4px 16px;

@@ -1,6 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { BsFillCheckCircleFill, BsXCircleFill } from "react-icons/bs";
-import { TiDelete } from "react-icons/ti";
 import { GlobalContext } from "../../global/GlobalContext";
 import { Container, Card } from "./styles";
 
@@ -16,9 +15,7 @@ const CardTasks = () => {
       return item;
     });
     setList(test);
-    console.log(list);
   };
-  console.log(list);
 
   return (
     <>
@@ -36,11 +33,13 @@ const CardTasks = () => {
               <p>{item.description}</p>
               <p>{item.status}</p>
             </div>
-            {item.status ? (
-              <BsXCircleFill size={"20px"} />
-            ) : (
-              <BsFillCheckCircleFill size={"20px"} />
-            )}
+            <div>
+              {item.status ? (
+                <BsXCircleFill size={"20px"} />
+              ) : (
+                <BsFillCheckCircleFill size={"20px"} />
+              )}
+            </div>
           </Card>
         ))}
       </Container>
